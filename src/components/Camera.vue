@@ -43,6 +43,7 @@ export default {
   methods: {
     async StartRecording(facingMode) {
       this.facingMode = facingMode;
+alert(this.$refs)
       let video = this.$refs.video;
       this.mediaStream = await navigator.mediaDevices.getUserMedia({
         video: { facingMode: facingMode },
